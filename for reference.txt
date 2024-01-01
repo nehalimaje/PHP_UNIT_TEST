@@ -1,0 +1,3 @@
+https://github.com/fajarghifar/inventory-management-system/tree/main/app/Http/Controllers/Auth
+
+https://github.com/mamun724682/Inventory-Management-System-Laravel-SPA/blob/master/README.md

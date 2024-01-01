@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "1c588e33-bfdc-47a3-90f7-3bdae82e1d45",
+		"name": "InventorySystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31656398"
+	},
+	"item": [
+		{
+			"name": "Create Item Details",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_id\" : \"3\",\r\n    \"item_name\" : \"Laptop\",\r\n    \"item_desc\" : \"Dell\",\r\n    \"price\" : \"70000\",\r\n    \"quantity\" : \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items"
+					]
+				},
+				"description": "http://localhost:8000/api/items"
+			},
+			"response": []
+		},
+		{
+			"name": "Show Item Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/items",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items"
+					]
+				},
+				"description": "http://localhost:8000/api/items"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_id\" : \"3\",\r\n    \"item_name\" : \"Update Mail Test\",\r\n    \"item_desc\" : \"update mail testING\",\r\n    \"price\" : \"20000\",\r\n    \"quantity\" : \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/items/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items",
+						"10"
+					]
+				},
+				"description": "http://localhost:8000/api/items/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item details",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/items/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items",
+						"4"
+					]
+				},
+				"description": "http://localhost:8000/api/items/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Category details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_name\":\"Phone\",\r\n    \"category_desc\":\"Phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category"
+					]
+				},
+				"description": "http://localhost:8000/api/category"
+			},
+			"response": []
+		},
+		{
+			"name": "Show category details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category"
+					]
+				},
+				"description": "http://localhost:8000/api/category"
+			},
+			"response": []
+		},
+		{
+			"name": "Update category details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_name\":\"Phone\",\r\n    \"category_desc\":\"Smart Phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/category/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category",
+						"3"
+					]
+				},
+				"description": "http://localhost:8000/api/category/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete category",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/category/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category",
+						"9"
+					]
+				},
+				"description": "http://localhost:8000/api/category/9"
+			},
+			"response": []
+		}
+	]
+}
