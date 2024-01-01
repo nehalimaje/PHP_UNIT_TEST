@@ -56,7 +56,7 @@ class EmployeeControllerTest extends TestCase
         $response->assertStatus(200);
         $response->assertJson([
             "message" => "Employee details added successfully!"
-        ]);
+        ]); 
         $this->assertDatabaseHas('employee', $data);
     }
 
